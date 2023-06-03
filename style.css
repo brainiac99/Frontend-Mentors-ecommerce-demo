@@ -334,6 +334,9 @@ body {
   border-radius: 12px;
   width: 100%;
 }
+.main-showcase img:hover {
+  cursor: pointer;
+}
 
 .showcase-thumbnails {
   display: flex;
