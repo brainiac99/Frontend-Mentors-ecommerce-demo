@@ -1,0 +1,150 @@
+/* --------FOR SMALL SCREEN SIZE--------- */
+
+@media (max-width: 399px) {
+  .main {
+    margin: 0;
+    gap: 1.8rem;
+  }
+
+  .nav {
+    margin-bottom: 0;
+  }
+
+  .nav-menu,
+  .nav-cta {
+    gap: 0.6rem;
+  }
+
+  .main-text {
+    padding: 1.2rem;
+    gap: 1.2rem;
+  }
+  .main-showcase {
+    padding: 0;
+    width: 100%;
+    position: relative;
+  }
+  .showcase-img img {
+    border-radius: 0;
+  }
+  .showcase-thumbnails {
+    display: none;
+  }
+  .buy {
+    align-items: stretch;
+  }
+
+  .quantity {
+    justify-content: space-between;
+  }
+
+  .lighthouse-show {
+    display: none;
+  }
+
+  .left {
+    left: 10%;
+  }
+  .right {
+    left: 90%;
+  }
+
+  .text {
+    line-height: 1.4;
+    font-size: 1.6rem;
+  }
+}
+
+/* --------FOR MEDIMUM SCREEN SIZE--------- */
+
+@media (min-width: 400px) {
+  .main {
+    grid-template-rows: auto;
+    margin: 5.6rem 1.2rem;
+  }
+
+  .nav {
+    padding-inline: 1.2rem;
+  }
+
+  .main-text {
+    margin: 1.2rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .company-name {
+    font-size: 1.2rem;
+  }
+  .title {
+    font-size: 3.6rem;
+  }
+
+  .text {
+    font-size: 1.8rem;
+  }
+
+  .left,
+  .right {
+    display: none;
+  }
+}
+
+/* --------FOR BIG SCREEN SIZE--------- */
+@media (min-width: 830px) {
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .btn-nav {
+    display: none;
+  }
+
+  .menu-list {
+    display: flex;
+  }
+
+  .lighthouse-overlay .main-showcase {
+    width: 60%;
+  }
+
+  .mobile-nav-overlay {
+    display: none;
+  }
+
+  .company-name {
+    font-size: 1.2rem;
+  }
+  .title {
+    font-size: 4.8rem;
+  }
+
+  .text {
+    font-size: 1.6rem;
+  }
+
+  .buy {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .lighthouse-show {
+    transform: scale(1);
+  }
+
+  .lighthouse-show .left,
+  .lighthouse-show .right {
+    display: flex;
+  }
+
+  .lighthouse-overlay .showcase-img img {
+    border-radius: 12px;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .lighthouse-overlay .main-showcase {
+    width: 40%;
+  }
+}
