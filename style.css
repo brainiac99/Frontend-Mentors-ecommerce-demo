@@ -80,6 +80,7 @@ body {
   gap: 2.4rem;
 
   position: relative;
+  cursor: pointer;
 }
 
 .nav-cta .icon-cart,
@@ -92,7 +93,6 @@ body {
 .nav-cta .icon-cart:hover,
 .delete .icon-delete:hover path {
   fill: hsl(220, 13%, 13%);
-  cursor: pointer;
 }
 
 .nav-cta .icon-cart {
